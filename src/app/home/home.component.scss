@@ -1,0 +1,66 @@
+p,h1{
+    color: #434343
+}
+
+.card{
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0.5rem 0.75rem;
+  }
+  
+  .card span::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0%;
+    width: 2px;
+    background-color: #434343;
+    transition: height 0.5s ease-in-out;
+  }
+  .card span::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 0%;
+    width: 2px;
+    background-color: #434343;
+    transition: height 0.5s ease-in-out;
+  }
+  
+  .card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;    
+    background-color: #434343;
+    transform: translateX(-105%);
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .card:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #434343;
+    transform: translateX(105%);
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .card:hover::after,
+  .card:hover::before {
+    transform: translateX(0);
+  }
+  
+  .card:hover span::before,
+  .card:hover span::after {
+    height: 100%;
+  }
+  

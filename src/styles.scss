@@ -1,0 +1,65 @@
+.dark-theme {
+  background-color: #121212;
+  color: #ffffff;
+
+  // Apply to all text elements globally
+  h1, h2, h3, h4, h5, h6, p, span, a, li, td, th {
+    color: #ffffff !important;  // Ensure text color is visible
+  }
+
+  // Navbar and Bootstrap containers
+  .navbar {
+    background-color: #1e1e1e !important;
+    color: #ffffff;
+
+    .nav-link {
+      color: #ffffff !important;
+    }
+  }
+
+  // Tables
+  table {
+    background-color: var(--surface-ground);
+    color: var(--text-color);
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #444444;
+  }
+
+  th, td {
+    border: 1px solid #444444;
+    padding: 12px;
+    text-align: left;
+    color: #000000 !important;  // Ensure text color is visible in table cells
+  }
+
+  tr:nth-child(even) {
+    background-color: #1e1e1e;
+  }
+
+  tr:hover {
+    background-color: #333333;
+  }
+
+  // Optional: style table headers differently
+  th {
+    background-color: #333333;
+    color: #ffffff;  // Set header text color to white
+    font-weight: bold;
+  }
+
+  // Bootstrap cards or containers
+  .card, .container, .col, .row {
+    background-color: #1e1e1e !important;
+    color: #ffffff !important;
+  }
+
+  // Buttons (optional – style your own way)
+  .btn {
+    background-color: #333333;
+    color: #ffffff;
+    border: 1px solid #444444;
+  }
+
+  // PrimeNG component styling (optional override
+}
